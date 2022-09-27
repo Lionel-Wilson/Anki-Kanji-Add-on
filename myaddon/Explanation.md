@@ -8,7 +8,7 @@ Options allow user to:
 - Select your primary kanji deck.(Preferably All in one kanji, to use as a kanji database/dictionary).
 - Select vocabulary/sentence decks(to scan and look for new words. Works along side morphman. maybe look at morphman code)
 - select field within chosen sentence decks that contains the sentence or vocab words you're learning to read/listen/understand(Warn that it must contain Japanese)
-- Set whether or not add on assumes that all words in cards that are already  "reviewed" are "known" and tag them with "known" tags. Or allow them to enterthe kanji that they know.
+- Set whether or not add on assumes that all words in cards that are already  "reviewed" are "known" and tag them with "known" tags. Or allow them to enter the kanji that they know.
 - Allows user to suspend all kanji cards
 
 3. Once options are set, the user reviews their vocab deck's new cards and the below process happens

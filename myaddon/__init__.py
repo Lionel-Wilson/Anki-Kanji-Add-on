@@ -8,26 +8,17 @@ from aqt.qt import *
 from anki import *
 
 def Menu_setup():
-    #Create a sub-menu item
-    Kanji_unlocker_menu = QMenu("Kanji Unlocker",mw)
-    #put sub-menu in Anki "Tool" menu.
-    mw.form.menuTools.addMenu(Kanji_unlocker_menu)
+    #Create the button on the top left of anki. mw = main window(of anki)
+    Kanji_unlocker_menu = QMenu("Kanji Unlocker", aqt.mw)
 
     #create buttons that will carry out actions
-    Kanji_unlocker_option = QAction("Select Main Kanji Deck",mw)
-    Kanji_unlocker_menu.addAction(Kanji_unlocker_option)
+    settings_action = QAction("Settings", aqt.mw)
+    Kanji_unlocker_menu.addAction(settings_action)
 
-    Kanji_unlocker_option = QAction("Select Vocab/Sentence Decks",mw)
-    Kanji_unlocker_menu.addAction(Kanji_unlocker_option)
-
-    Kanji_unlocker_option = QAction("Select Fields to be Parsed",mw)
-    Kanji_unlocker_menu.addAction(Kanji_unlocker_option)
-
-    Kanji_unlocker_option = QAction("Suspend All Kanji",mw)
-    Kanji_unlocker_menu.addAction(Kanji_unlocker_option)
 
 def Mark_known_kanji():
-    MarkKnownDialog.show_modal(parent=aqt.mw)
+    pass
+    #MarkKnownDialog.show_modal(parent=aqt.mw)
 
 Menu_setup()
 
