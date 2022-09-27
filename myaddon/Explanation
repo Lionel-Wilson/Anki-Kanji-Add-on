@@ -1,0 +1,48 @@
+What I want the add on to do /Plan
+Must have Japanese support and Morphman add on(maybe)
+
+1. you install add on.
+
+2. when installed, add on has options. 
+Options allow user to:
+- Select your primary kanji deck.(Preferably All in one kanji, to use as a kanji database/dictionary).
+- Select vocabulary/sentence decks(to scan and look for new words. Works along side morphman. maybe look at morphman code)
+- select field within chosen sentence decks that contains the sentence or vocab words you're learning to read/listen/understand(Warn that it must contain Japanese)
+- Set whether or not add on assumes that all words in cards that are already  "reviewed" are "known" and tag them with "known" tags. Or allow them to enterthe kanji that they know.
+- Allows user to suspend all kanji cards
+
+3. Once options are set, the user reviews their vocab deck's new cards and the below process happens
+
+Select a deck to run the function below on:
+import readings(From japanese support), everything(From Morphman)
+
+if card status = new:
+    a_string_of_kanji = ""
+    a_list_of_unknown_words = []
+    scans selected field :
+        if contains word that are not "known":
+            a_list_of_unknown_words += [word]
+        else:
+            continue/pass
+
+    for word in a_list_of_unknown_words:
+        for kanji in len(word):
+            if word[kanji] is in first line of "kanji" field of 'All in on deck' AND suspended:
+                unsuspend card
+                insert f"\n {word}" into 'kanji' field.
+                insert f"\n {word reading} into "English" Field.
+
+else:
+    pass
+
+Get card
+check if new card
+get expression field(selected by user)
+
+
+
+
+
+
+
+
